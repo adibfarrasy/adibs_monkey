@@ -11,8 +11,9 @@ const (
 	EOF     = "EOF"
 	ILLEGAL = "ILLEGAL"
 
-	IDENT = "IDENT"
-	INT   = "INT"
+	IDENT  = "IDENT"
+	INT    = "INT"
+	STRING = "STRING"
 
 	// operators
 	ASSIGN   = "ASSIGN"
@@ -31,11 +32,14 @@ const (
 	// delimiters
 	COMMA     = ","
 	SEMICOLON = ";"
+	COLON     = ":"
 
 	LPAREN = "("
 	RPAREN = ")"
 	LBRACE = "{"
 	RBRACE = "}"
+	LSQBR  = "["
+	RSQBR  = "]"
 
 	// keywords
 	FUNCTION = "FUNCTION"

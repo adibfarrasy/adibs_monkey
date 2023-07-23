@@ -70,6 +70,7 @@ func TestReturnStatements(t *testing.T) {
 return 5;
 return 10;
 return 993322;
+return 69
 `
 	l := lexer.New(input)
 	p := New(l)
@@ -77,7 +78,7 @@ return 993322;
 	program := p.ParseProgram()
 	checkParseErrors(t, p)
 
-	if len(program.Statements) != 3 {
+	if len(program.Statements) != 4 {
 		t.Fatalf("program.Statements does not contain 3 statements. got=%d", len(program.Statements))
 	}
 
